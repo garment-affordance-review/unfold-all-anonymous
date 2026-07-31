@@ -1,0 +1,528 @@
+{
+  "assets": [
+    {
+      "local_asset_index": 1130,
+      "asset_id": 1130,
+      "pairs": [
+        {
+          "coord_id1": 578,
+          "coord_id2": 1475,
+          "raw_id1": 639,
+          "raw_id2": 1766,
+          "distance": 0.2037818878889084,
+          "bin_idx": 0
+        },
+        {
+          "coord_id1": 2195,
+          "coord_id2": 988,
+          "raw_id1": 2621,
+          "raw_id2": 1171,
+          "distance": 0.18447914719581604,
+          "bin_idx": 0
+        },
+        {
+          "coord_id1": 2564,
+          "coord_id2": 3148,
+          "raw_id1": 3076,
+          "raw_id2": 3807,
+          "distance": 0.15872971713542938,
+          "bin_idx": 0
+        },
+        {
+          "coord_id1": 3393,
+          "coord_id2": 5983,
+          "raw_id1": 4089,
+          "raw_id2": 7271,
+          "distance": 0.1586659848690033,
+          "bin_idx": 0
+        },
+        {
+          "coord_id1": 3648,
+          "coord_id2": 191,
+          "raw_id1": 4368,
+          "raw_id2": 202,
+          "distance": 0.15331070125102997,
+          "bin_idx": 0
+        },
+        {
+          "coord_id1": 3898,
+          "coord_id2": 6068,
+          "raw_id1": 4681,
+          "raw_id2": 7378,
+          "distance": 0.16494227945804596,
+          "bin_idx": 0
+        },
+        {
+          "coord_id1": 5414,
+          "coord_id2": 6010,
+          "raw_id1": 6564,
+          "raw_id2": 7307,
+          "distance": 0.11327023804187775,
+          "bin_idx": 0
+        },
+        {
+          "coord_id1": 6206,
+          "coord_id2": 6100,
+          "raw_id1": 7554,
+          "raw_id2": 7419,
+          "distance": 0.14157304167747498,
+          "bin_idx": 0
+        },
+        {
+          "coord_id1": 145,
+          "coord_id2": 1183,
+          "raw_id1": 146,
+          "raw_id2": 1402,
+          "distance": 0.28688251972198486,
+          "bin_idx": 1
+        },
+        {
+          "coord_id1": 578,
+          "coord_id2": 1601,
+          "raw_id1": 639,
+          "raw_id2": 1924,
+          "distance": 0.3075583279132843,
+          "bin_idx": 1
+        },
+        {
+          "coord_id1": 578,
+          "coord_id2": 4400,
+          "raw_id1": 639,
+          "raw_id2": 5314,
+          "distance": 0.29365143179893494,
+          "bin_idx": 1
+        },
+        {
+          "coord_id1": 2564,
+          "coord_id2": 1475,
+          "raw_id1": 3076,
+          "raw_id2": 1766,
+          "distance": 0.29119327664375305,
+          "bin_idx": 1
+        },
+        {
+          "coord_id1": 3266,
+          "coord_id2": 2680,
+          "raw_id1": 5952,
+          "raw_id2": 3219,
+          "distance": 0.27956005930900574,
+          "bin_idx": 1
+        },
+        {
+          "coord_id1": 3832,
+          "coord_id2": 4462,
+          "raw_id1": 4592,
+          "raw_id2": 5392,
+          "distance": 0.24688205122947693,
+          "bin_idx": 1
+        },
+        {
+          "coord_id1": 4942,
+          "coord_id2": 363,
+          "raw_id1": 5990,
+          "raw_id2": 388,
+          "distance": 0.25401151180267334,
+          "bin_idx": 1
+        },
+        {
+          "coord_id1": 5498,
+          "coord_id2": 2499,
+          "raw_id1": 6670,
+          "raw_id2": 2998,
+          "distance": 0.3168705999851227,
+          "bin_idx": 1
+        },
+        {
+          "coord_id1": 315,
+          "coord_id2": 3310,
+          "raw_id1": 337,
+          "raw_id2": 4006,
+          "distance": 0.41259464621543884,
+          "bin_idx": 2
+        },
+        {
+          "coord_id1": 1608,
+          "coord_id2": 3355,
+          "raw_id1": 1931,
+          "raw_id2": 4051,
+          "distance": 0.36353421211242676,
+          "bin_idx": 2
+        },
+        {
+          "coord_id1": 1739,
+          "coord_id2": 799,
+          "raw_id1": 2079,
+          "raw_id2": 927,
+          "distance": 0.3858087658882141,
+          "bin_idx": 2
+        },
+        {
+          "coord_id1": 1799,
+          "coord_id2": 2195,
+          "raw_id1": 2148,
+          "raw_id2": 2621,
+          "distance": 0.4002947211265564,
+          "bin_idx": 2
+        },
+        {
+          "coord_id1": 2219,
+          "coord_id2": 4940,
+          "raw_id1": 2654,
+          "raw_id2": 5987,
+          "distance": 0.4219130277633667,
+          "bin_idx": 2
+        },
+        {
+          "coord_id1": 2456,
+          "coord_id2": 1177,
+          "raw_id1": 2947,
+          "raw_id2": 1395,
+          "distance": 0.37293127179145813,
+          "bin_idx": 2
+        },
+        {
+          "coord_id1": 5192,
+          "coord_id2": 518,
+          "raw_id1": 6270,
+          "raw_id2": 565,
+          "distance": 0.35237038135528564,
+          "bin_idx": 2
+        },
+        {
+          "coord_id1": 6161,
+          "coord_id2": 6206,
+          "raw_id1": 7492,
+          "raw_id2": 7554,
+          "distance": 0.47626233100891113,
+          "bin_idx": 2
+        },
+        {
+          "coord_id1": 62,
+          "coord_id2": 2195,
+          "raw_id1": 62,
+          "raw_id2": 2621,
+          "distance": 0.7492336630821228,
+          "bin_idx": 3
+        },
+        {
+          "coord_id1": 62,
+          "coord_id2": 3266,
+          "raw_id1": 62,
+          "raw_id2": 5952,
+          "distance": 0.7468488216400146,
+          "bin_idx": 3
+        },
+        {
+          "coord_id1": 69,
+          "coord_id2": 6421,
+          "raw_id1": 69,
+          "raw_id2": 7837,
+          "distance": 0.5319414138793945,
+          "bin_idx": 3
+        },
+        {
+          "coord_id1": 549,
+          "coord_id2": 6421,
+          "raw_id1": 600,
+          "raw_id2": 7837,
+          "distance": 0.5150306820869446,
+          "bin_idx": 3
+        },
+        {
+          "coord_id1": 1550,
+          "coord_id2": 2376,
+          "raw_id1": 1856,
+          "raw_id2": 2849,
+          "distance": 0.6637517809867859,
+          "bin_idx": 3
+        },
+        {
+          "coord_id1": 4855,
+          "coord_id2": 4303,
+          "raw_id1": 5882,
+          "raw_id2": 5193,
+          "distance": 0.7711862325668335,
+          "bin_idx": 3
+        },
+        {
+          "coord_id1": 5440,
+          "coord_id2": 1601,
+          "raw_id1": 6598,
+          "raw_id2": 1924,
+          "distance": 0.7964378595352173,
+          "bin_idx": 3
+        },
+        {
+          "coord_id1": 6100,
+          "coord_id2": 518,
+          "raw_id1": 7419,
+          "raw_id2": 565,
+          "distance": 0.5207043290138245,
+          "bin_idx": 3
+        }
+      ]
+    },
+    {
+      "local_asset_index": 244,
+      "asset_id": 244,
+      "pairs": [
+        {
+          "coord_id1": 144,
+          "coord_id2": 1859,
+          "raw_id1": 152,
+          "raw_id2": 1888,
+          "distance": 0.20303776860237122,
+          "bin_idx": 0
+        },
+        {
+          "coord_id1": 594,
+          "coord_id2": 1203,
+          "raw_id1": 607,
+          "raw_id2": 1224,
+          "distance": 0.1963983178138733,
+          "bin_idx": 0
+        },
+        {
+          "coord_id1": 1190,
+          "coord_id2": 1944,
+          "raw_id1": 1211,
+          "raw_id2": 1976,
+          "distance": 0.1943727731704712,
+          "bin_idx": 0
+        },
+        {
+          "coord_id1": 1203,
+          "coord_id2": 3303,
+          "raw_id1": 1224,
+          "raw_id2": 3356,
+          "distance": 0.1323658525943756,
+          "bin_idx": 0
+        },
+        {
+          "coord_id1": 1254,
+          "coord_id2": 914,
+          "raw_id1": 1277,
+          "raw_id2": 935,
+          "distance": 0.1616407036781311,
+          "bin_idx": 0
+        },
+        {
+          "coord_id1": 1488,
+          "coord_id2": 2056,
+          "raw_id1": 1512,
+          "raw_id2": 2089,
+          "distance": 0.20962263643741608,
+          "bin_idx": 0
+        },
+        {
+          "coord_id1": 1521,
+          "coord_id2": 144,
+          "raw_id1": 1546,
+          "raw_id2": 152,
+          "distance": 0.14882461726665497,
+          "bin_idx": 0
+        },
+        {
+          "coord_id1": 2173,
+          "coord_id2": 2043,
+          "raw_id1": 2211,
+          "raw_id2": 2076,
+          "distance": 0.13806504011154175,
+          "bin_idx": 0
+        },
+        {
+          "coord_id1": 144,
+          "coord_id2": 2915,
+          "raw_id1": 152,
+          "raw_id2": 2962,
+          "distance": 0.2337343841791153,
+          "bin_idx": 1
+        },
+        {
+          "coord_id1": 201,
+          "coord_id2": 236,
+          "raw_id1": 209,
+          "raw_id2": 244,
+          "distance": 0.2532573342323303,
+          "bin_idx": 1
+        },
+        {
+          "coord_id1": 477,
+          "coord_id2": 2307,
+          "raw_id1": 488,
+          "raw_id2": 2345,
+          "distance": 0.2699577212333679,
+          "bin_idx": 1
+        },
+        {
+          "coord_id1": 1509,
+          "coord_id2": 794,
+          "raw_id1": 1534,
+          "raw_id2": 811,
+          "distance": 0.2926090657711029,
+          "bin_idx": 1
+        },
+        {
+          "coord_id1": 2099,
+          "coord_id2": 2284,
+          "raw_id1": 2132,
+          "raw_id2": 2322,
+          "distance": 0.24588602781295776,
+          "bin_idx": 1
+        },
+        {
+          "coord_id1": 2218,
+          "coord_id2": 3356,
+          "raw_id1": 2256,
+          "raw_id2": 3409,
+          "distance": 0.2512933909893036,
+          "bin_idx": 1
+        },
+        {
+          "coord_id1": 2642,
+          "coord_id2": 2048,
+          "raw_id1": 2683,
+          "raw_id2": 2081,
+          "distance": 0.25729429721832275,
+          "bin_idx": 1
+        },
+        {
+          "coord_id1": 3021,
+          "coord_id2": 3084,
+          "raw_id1": 3071,
+          "raw_id2": 3134,
+          "distance": 0.30780065059661865,
+          "bin_idx": 1
+        },
+        {
+          "coord_id1": 10,
+          "coord_id2": 799,
+          "raw_id1": 10,
+          "raw_id2": 817,
+          "distance": 0.42936256527900696,
+          "bin_idx": 2
+        },
+        {
+          "coord_id1": 781,
+          "coord_id2": 59,
+          "raw_id1": 798,
+          "raw_id2": 59,
+          "distance": 0.3923015594482422,
+          "bin_idx": 2
+        },
+        {
+          "coord_id1": 1131,
+          "coord_id2": 1254,
+          "raw_id1": 1152,
+          "raw_id2": 1277,
+          "distance": 0.3630826771259308,
+          "bin_idx": 2
+        },
+        {
+          "coord_id1": 1203,
+          "coord_id2": 341,
+          "raw_id1": 1224,
+          "raw_id2": 351,
+          "distance": 0.33090740442276,
+          "bin_idx": 2
+        },
+        {
+          "coord_id1": 1509,
+          "coord_id2": 949,
+          "raw_id1": 1534,
+          "raw_id2": 970,
+          "distance": 0.32346653938293457,
+          "bin_idx": 2
+        },
+        {
+          "coord_id1": 2835,
+          "coord_id2": 55,
+          "raw_id1": 2882,
+          "raw_id2": 55,
+          "distance": 0.3536663353443146,
+          "bin_idx": 2
+        },
+        {
+          "coord_id1": 3337,
+          "coord_id2": 689,
+          "raw_id1": 3390,
+          "raw_id2": 704,
+          "distance": 0.41618481278419495,
+          "bin_idx": 2
+        },
+        {
+          "coord_id1": 3403,
+          "coord_id2": 574,
+          "raw_id1": 3457,
+          "raw_id2": 587,
+          "distance": 0.3209311366081238,
+          "bin_idx": 2
+        },
+        {
+          "coord_id1": 28,
+          "coord_id2": 877,
+          "raw_id1": 28,
+          "raw_id2": 898,
+          "distance": 0.4807957112789154,
+          "bin_idx": 3
+        },
+        {
+          "coord_id1": 1066,
+          "coord_id2": 1730,
+          "raw_id1": 1087,
+          "raw_id2": 1757,
+          "distance": 0.6525855660438538,
+          "bin_idx": 3
+        },
+        {
+          "coord_id1": 1343,
+          "coord_id2": 1824,
+          "raw_id1": 1366,
+          "raw_id2": 1853,
+          "distance": 0.5644259452819824,
+          "bin_idx": 3
+        },
+        {
+          "coord_id1": 2382,
+          "coord_id2": 949,
+          "raw_id1": 2420,
+          "raw_id2": 970,
+          "distance": 0.6655990481376648,
+          "bin_idx": 3
+        },
+        {
+          "coord_id1": 2564,
+          "coord_id2": 746,
+          "raw_id1": 2604,
+          "raw_id2": 763,
+          "distance": 0.46981140971183777,
+          "bin_idx": 3
+        },
+        {
+          "coord_id1": 2799,
+          "coord_id2": 241,
+          "raw_id1": 2843,
+          "raw_id2": 249,
+          "distance": 0.5453320741653442,
+          "bin_idx": 3
+        },
+        {
+          "coord_id1": 2915,
+          "coord_id2": 2250,
+          "raw_id1": 2962,
+          "raw_id2": 2288,
+          "distance": 0.4667259752750397,
+          "bin_idx": 3
+        },
+        {
+          "coord_id1": 3356,
+          "coord_id2": 1651,
+          "raw_id1": 3409,
+          "raw_id2": 1678,
+          "distance": 0.45239654183387756,
+          "bin_idx": 3
+        }
+      ]
+    }
+  ]
+}

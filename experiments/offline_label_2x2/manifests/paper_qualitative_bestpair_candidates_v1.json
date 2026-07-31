@@ -1,0 +1,237 @@
+[
+  {
+    "local_asset_index": 92,
+    "asset_id": 1520,
+    "asset_path": "Dress/Long_Tube/DLT_Dress175/DLT_Dress175_obj.usd",
+    "protocols": {
+      "random_fling": {
+        "coord_id1": 218,
+        "coord_id2": 137,
+        "raw_id1": 220,
+        "raw_id2": 139,
+        "best_pair_cov_mean": 1.4856823682785034,
+        "best_pair_cov_std": 0.2871367633342743,
+        "mean_reward": -0.33173680305480957,
+        "best_reward": -0.2646884322166443
+      },
+      "random_y": {
+        "coord_id1": 218,
+        "coord_id2": 137,
+        "raw_id1": 220,
+        "raw_id2": 139,
+        "best_pair_cov_mean": 1.8141653537750244,
+        "best_pair_cov_std": 0.16380812227725983,
+        "mean_reward": -0.33711951971054077,
+        "best_reward": -0.30888572335243225
+      },
+      "cond_fling": {
+        "coord_id1": 3232,
+        "coord_id2": 7501,
+        "raw_id1": 3847,
+        "raw_id2": 9134,
+        "best_pair_cov_mean": 1.942770004272461,
+        "best_pair_cov_std": 0.11136150360107422,
+        "mean_reward": -0.45708584785461426,
+        "best_reward": -0.44803184270858765
+      },
+      "cond_y": {
+        "coord_id1": 118,
+        "coord_id2": 88,
+        "raw_id1": 120,
+        "raw_id2": 89,
+        "best_pair_cov_mean": 2.270406723022461,
+        "best_pair_cov_std": 0.08555692434310913,
+        "mean_reward": -0.4790748953819275,
+        "best_reward": -0.47348958253860474
+      }
+    }
+  },
+  {
+    "local_asset_index": 84,
+    "asset_id": 1392,
+    "asset_path": "Trousers/Long/PL_M1_092/PL_M1_092_obj.usd",
+    "protocols": {
+      "random_fling": {
+        "coord_id1": 7743,
+        "coord_id2": 1965,
+        "raw_id1": 9384,
+        "raw_id2": 2318,
+        "best_pair_cov_mean": 1.1018357276916504,
+        "best_pair_cov_std": 0.11846750229597092,
+        "mean_reward": -0.5337474346160889,
+        "best_reward": -0.49104365706443787
+      },
+      "random_y": {
+        "coord_id1": 7828,
+        "coord_id2": 80,
+        "raw_id1": 9502,
+        "raw_id2": 92,
+        "best_pair_cov_mean": 1.351322889328003,
+        "best_pair_cov_std": 0.0655306950211525,
+        "mean_reward": -0.2850664556026459,
+        "best_reward": -0.22961747646331787
+      },
+      "cond_fling": {
+        "coord_id1": 7743,
+        "coord_id2": 1965,
+        "raw_id1": 9384,
+        "raw_id2": 2318,
+        "best_pair_cov_mean": 1.087233304977417,
+        "best_pair_cov_std": 0.030830059200525284,
+        "mean_reward": -0.5370922088623047,
+        "best_reward": -0.5282074213027954
+      },
+      "cond_y": {
+        "coord_id1": 6422,
+        "coord_id2": 2925,
+        "raw_id1": 7752,
+        "raw_id2": 3456,
+        "best_pair_cov_mean": 1.4332289695739746,
+        "best_pair_cov_std": 0.015783879905939102,
+        "mean_reward": -0.28729763627052307,
+        "best_reward": -0.2803286612033844
+      }
+    }
+  },
+  {
+    "local_asset_index": 66,
+    "asset_id": 1098,
+    "asset_path": "Trousers/Long/PL_M1_100/PL_M1_100_obj.usd",
+    "protocols": {
+      "random_fling": {
+        "coord_id1": 271,
+        "coord_id2": 4335,
+        "raw_id1": 301,
+        "raw_id2": 5165,
+        "best_pair_cov_mean": 1.094871163368225,
+        "best_pair_cov_std": 0.05806160718202591,
+        "mean_reward": -0.23376378417015076,
+        "best_reward": -0.22475051879882812
+      },
+      "random_y": {
+        "coord_id1": 271,
+        "coord_id2": 4335,
+        "raw_id1": 301,
+        "raw_id2": 5165,
+        "best_pair_cov_mean": 1.3622076511383057,
+        "best_pair_cov_std": 0.06944803893566132,
+        "mean_reward": -0.3351782560348511,
+        "best_reward": -0.31565818190574646
+      },
+      "cond_fling": {
+        "coord_id1": 271,
+        "coord_id2": 4335,
+        "raw_id1": 301,
+        "raw_id2": 5165,
+        "best_pair_cov_mean": 1.0327911376953125,
+        "best_pair_cov_std": 0.018159551545977592,
+        "mean_reward": -0.22390621900558472,
+        "best_reward": -0.2189672291278839
+      },
+      "cond_y": {
+        "coord_id1": 271,
+        "coord_id2": 4335,
+        "raw_id1": 301,
+        "raw_id2": 5165,
+        "best_pair_cov_mean": 1.4388940334320068,
+        "best_pair_cov_std": 0.0091734379529953,
+        "mean_reward": -0.3133397400379181,
+        "best_reward": -0.30945339798927307
+      }
+    }
+  },
+  {
+    "local_asset_index": 96,
+    "asset_id": 1570,
+    "asset_path": "Dress/Short_NoSleeve/DSNS_Dress051_0/DSNS_Dress051_0_obj.usd",
+    "protocols": {
+      "random_fling": {
+        "coord_id1": 930,
+        "coord_id2": 7109,
+        "raw_id1": 935,
+        "raw_id2": 7286,
+        "best_pair_cov_mean": 1.1479400396347046,
+        "best_pair_cov_std": 0.06520041823387146,
+        "mean_reward": -0.3271423280239105,
+        "best_reward": -0.24481134116649628
+      },
+      "random_y": {
+        "coord_id1": 930,
+        "coord_id2": 7109,
+        "raw_id1": 935,
+        "raw_id2": 7286,
+        "best_pair_cov_mean": 1.2589988708496094,
+        "best_pair_cov_std": 0.1636824905872345,
+        "mean_reward": -0.3061932921409607,
+        "best_reward": -0.29353833198547363
+      },
+      "cond_fling": {
+        "coord_id1": 6804,
+        "coord_id2": 6145,
+        "raw_id1": 6941,
+        "raw_id2": 6268,
+        "best_pair_cov_mean": 1.2005672454833984,
+        "best_pair_cov_std": 0.0789177194237709,
+        "mean_reward": -0.4205273687839508,
+        "best_reward": -0.4138374924659729
+      },
+      "cond_y": {
+        "coord_id1": 930,
+        "coord_id2": 7109,
+        "raw_id1": 935,
+        "raw_id2": 7286,
+        "best_pair_cov_mean": 1.3732860088348389,
+        "best_pair_cov_std": 0.0234090443700552,
+        "mean_reward": -0.3056248724460602,
+        "best_reward": -0.30359411239624023
+      }
+    }
+  },
+  {
+    "local_asset_index": 99,
+    "asset_id": 1625,
+    "asset_path": "Dress/Long_LongSleeve/DLLS_Dress352/DLLS_Dress352_obj.usd",
+    "protocols": {
+      "random_fling": {
+        "coord_id1": 9862,
+        "coord_id2": 3697,
+        "raw_id1": 12077,
+        "raw_id2": 4547,
+        "best_pair_cov_mean": 0.8532966375350952,
+        "best_pair_cov_std": 0.08310414105653763,
+        "mean_reward": -0.3459969460964203,
+        "best_reward": -0.3298425078392029
+      },
+      "random_y": {
+        "coord_id1": 9862,
+        "coord_id2": 3697,
+        "raw_id1": 12077,
+        "raw_id2": 4547,
+        "best_pair_cov_mean": 0.9849096536636353,
+        "best_pair_cov_std": 0.09215183556079865,
+        "mean_reward": -0.357313871383667,
+        "best_reward": -0.33536869287490845
+      },
+      "cond_fling": {
+        "coord_id1": 11112,
+        "coord_id2": 4099,
+        "raw_id1": 13604,
+        "raw_id2": 5055,
+        "best_pair_cov_mean": 0.8757354021072388,
+        "best_pair_cov_std": 0.043078213930130005,
+        "mean_reward": -0.25441843271255493,
+        "best_reward": -0.25002819299697876
+      },
+      "cond_y": {
+        "coord_id1": 11112,
+        "coord_id2": 4099,
+        "raw_id1": 13604,
+        "raw_id2": 5055,
+        "best_pair_cov_mean": 1.1172089576721191,
+        "best_pair_cov_std": 0.022966066375374794,
+        "mean_reward": -0.243465855717659,
+        "best_reward": -0.2406061738729477
+      }
+    }
+  }
+]

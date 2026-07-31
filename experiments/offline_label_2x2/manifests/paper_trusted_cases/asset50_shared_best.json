@@ -1,0 +1,22 @@
+{
+  "seed": 0,
+  "description": "trusted paper case asset50_shared_best",
+  "assets": [
+    {
+      "local_asset_index": 50,
+      "asset_index": 737,
+      "asset_id": 737,
+      "asset_path": "Tops/NoCollar_noSleeve_FrontOpen/TNNO_Normal_Model_060/TNNO_Normal_Model_060_obj.usd",
+      "pairs": [
+        {
+          "coord_id1": 1944,
+          "coord_id2": 1649,
+          "raw_id1": 2391,
+          "raw_id2": 2006,
+          "distance": 0.08649762719869614,
+          "bin_idx": 0
+        }
+      ]
+    }
+  ]
+}

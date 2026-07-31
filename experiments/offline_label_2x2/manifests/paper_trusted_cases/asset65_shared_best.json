@@ -1,0 +1,22 @@
+{
+  "seed": 0,
+  "description": "trusted paper case asset65_shared_best",
+  "assets": [
+    {
+      "local_asset_index": 65,
+      "asset_index": 1087,
+      "asset_id": 1087,
+      "asset_path": "Tops/NoCollar_Lsleeve_FrontOpen/TNLO_004_/TNLO_004__obj.usd",
+      "pairs": [
+        {
+          "coord_id1": 897,
+          "coord_id2": 4700,
+          "raw_id1": 1084,
+          "raw_id2": 5714,
+          "distance": 0.4135430157184601,
+          "bin_idx": 2
+        }
+      ]
+    }
+  ]
+}

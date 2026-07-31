@@ -1,0 +1,79 @@
+data:
+  supervision_index: ${DATA_ROOT}/pair_policy_train_v2/index.json
+  index_cache: experiments/pair_policy/runs/train/unetpp_resnet50_exp_huber_a1_only/index.json
+  resize_width: 320
+  resize_height: 256
+  input_normalization: imagenet
+  val_ratio: 0.125
+  split_seed: 42
+  rebuild_index: false
+  index_progress_every: 1000
+  filter:
+    min_a1_std: 0.0
+    min_a1_top1_margin: 0.0
+    min_reward_row_top1_margin: 0.0
+
+mask_augment:
+  enabled: false
+
+model:
+  in_channels: 3
+  feature_dim: 64
+  backbone:
+    name: smp_unetplusplus
+    params:
+      out_channels: 64
+      encoder_name: resnet50
+      encoder_weights: imagenet
+      decoder_channels: [256, 128, 64, 32, 16]
+      decoder_attention_type: null
+
+target:
+  name: image_exp
+
+loss:
+  name: masked_huber
+  lambda_a1: 1.0
+  lambda_a2: 0.0
+  huber_delta: 0.1
+
+wandb:
+  enabled: true
+  project: pair-policy
+  entity: null
+  name: pair-policy-unetpp-resnet50-exp-huber-a1-only
+  tags:
+    - pair_policy
+    - unetpp
+    - resnet50
+    - ddp
+    - exp
+    - huber
+    - a1_only
+    - sharper_target
+  mode: online
+
+train:
+  output_dir: experiments/pair_policy/runs/train/unetpp_resnet50_exp_huber_a1_only
+  seed: 42
+  device: cuda
+  distributed:
+    backend: nccl
+    nproc_per_node: 2
+  epochs: 50
+  shuffle: true
+  val_shuffle: false
+  batch_size: 8
+  val_batch_size: 8
+  num_workers: 8
+  pin_memory: true
+  persistent_workers: true
+  prefetch_factor: 2
+  lr: 0.001
+  weight_decay: 0.0001
+  num_x1_samples: 4
+  a1_target_tau: 0.1
+  a2_target_tau: 0.1
+  max_steps_per_epoch: 0
+  log_every_steps: 50
+  vis_every: 1

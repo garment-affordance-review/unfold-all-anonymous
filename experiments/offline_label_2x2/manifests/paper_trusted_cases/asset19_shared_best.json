@@ -1,0 +1,22 @@
+{
+  "seed": 0,
+  "description": "trusted paper case asset19_shared_best",
+  "assets": [
+    {
+      "local_asset_index": 19,
+      "asset_index": 339,
+      "asset_id": 339,
+      "asset_path": "Dress/Short_LongSleeve/DSLS_Dress155/DSLS_Dress155_obj.usd",
+      "pairs": [
+        {
+          "coord_id1": 3328,
+          "coord_id2": 1538,
+          "raw_id1": 3372,
+          "raw_id2": 1554,
+          "distance": 0.3305017650127411,
+          "bin_idx": 2
+        }
+      ]
+    }
+  ]
+}

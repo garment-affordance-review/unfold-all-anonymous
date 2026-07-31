@@ -1,0 +1,112 @@
+data:
+  supervision_index: ${DATA_ROOT}/pair_policy_train_v2/index.json
+  index_cache: experiments/pair_policy/runs/train/segformer_mit_b4_minmax_bce/index.json
+  resize_width: 320
+  resize_height: 256
+  input_normalization: imagenet
+  supervision_mask_mode: input_mask
+  val_ratio: 0.125
+  split_seed: 42
+  rebuild_index: false
+  index_progress_every: 1000
+  filter:
+    min_a1_std: 0.0
+    min_a1_top1_margin: 0.0
+    min_reward_row_top1_margin: 0.0
+
+mask_augment:
+  enabled: true
+  min_area_ratio: 0.85
+  max_area_ratio: 1.16
+  morph_radius_min: 0
+  morph_radius_max: 1
+  morph_mode: dilate
+  blur_prob: 0.08
+  blur_radius_max: 0.8
+  hole_count_max: 2
+  hole_radius_max: 3
+  patch_count_max: 2
+  patch_radius_max: 6
+  exterior_patch_prob: 0.75
+  contour_dropout_prob: 0.02
+  contour_band_width: 2
+
+rgb_augment:
+  enabled: true
+  brightness_delta: 0.08
+  contrast_delta: 0.08
+  saturation_delta: 0.06
+  blur_prob: 0.12
+  blur_radius_max: 1.0
+  noise_prob: 0.12
+  noise_std: 0.015
+
+geometry_augment:
+  enabled: true
+  prob: 0.35
+  max_rotate_deg: 10.0
+  min_scale: 0.96
+  max_scale: 1.04
+  max_translate_frac_x: 0.03
+  max_translate_frac_y: 0.03
+
+model:
+  in_channels: 3
+  feature_dim: 64
+  backbone:
+    name: smp_segformer
+    params:
+      out_channels: 64
+      encoder_name: mit_b4
+      encoder_weights: imagenet
+      decoder_segmentation_channels: 256
+
+target:
+  name: image_minmax
+
+loss:
+  name: masked_bce
+  lambda_a1: 1.0
+  lambda_a2: 1.0
+
+wandb:
+  enabled: true
+  project: pair-policy
+  entity: null
+  name: pair-policy-segformer-mit-b4-minmax-bce
+  tags:
+    - pair_policy
+    - segformer
+    - mit_b4
+    - ddp
+    - minmax
+    - bce
+    - a1_a2
+    - mask_aug
+    - rgb_aug
+  mode: online
+
+train:
+  output_dir: experiments/pair_policy/runs/train/segformer_mit_b4_minmax_bce
+  seed: 42
+  device: cuda
+  distributed:
+    backend: nccl
+    nproc_per_node: 2
+  epochs: 50
+  shuffle: true
+  val_shuffle: false
+  batch_size: 8
+  val_batch_size: 8
+  num_workers: 8
+  pin_memory: true
+  persistent_workers: true
+  prefetch_factor: 2
+  lr: 0.0001
+  weight_decay: 0.0001
+  num_x1_samples: 4
+  a1_target_tau: 0.05
+  a2_target_tau: 0.05
+  max_steps_per_epoch: 0
+  log_every_steps: 50
+  vis_every: 1

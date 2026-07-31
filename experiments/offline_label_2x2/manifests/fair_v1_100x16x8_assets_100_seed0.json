@@ -1,0 +1,661 @@
+{
+  "seed": 0,
+  "num_assets": 100,
+  "num_bins": 10,
+  "valid_assets_json": "data/assets/cloth/valid_assets.json",
+  "clothes_root": "data/clothes/assets",
+  "bins": [
+    {
+      "bin_idx": 0,
+      "available": 165,
+      "selected": 10
+    },
+    {
+      "bin_idx": 1,
+      "available": 164,
+      "selected": 10
+    },
+    {
+      "bin_idx": 2,
+      "available": 165,
+      "selected": 10
+    },
+    {
+      "bin_idx": 3,
+      "available": 164,
+      "selected": 10
+    },
+    {
+      "bin_idx": 4,
+      "available": 164,
+      "selected": 10
+    },
+    {
+      "bin_idx": 5,
+      "available": 165,
+      "selected": 10
+    },
+    {
+      "bin_idx": 6,
+      "available": 165,
+      "selected": 10
+    },
+    {
+      "bin_idx": 7,
+      "available": 164,
+      "selected": 10
+    },
+    {
+      "bin_idx": 8,
+      "available": 165,
+      "selected": 10
+    },
+    {
+      "bin_idx": 9,
+      "available": 165,
+      "selected": 10
+    }
+  ],
+  "assets": [
+    {
+      "asset_index": 36,
+      "asset_id": 36,
+      "asset_path": "Tops/NoCollar_noSleeve_FrontClose/TNNC_Top396/TNNC_Top396_obj.usd",
+      "coord_count": 1514
+    },
+    {
+      "asset_index": 71,
+      "asset_id": 71,
+      "asset_path": "Tops/Gallus/TG_Top149/TG_Top149_obj.usd",
+      "coord_count": 1427
+    },
+    {
+      "asset_index": 88,
+      "asset_id": 88,
+      "asset_path": "Tops/Collar_noSleeve_FrontClose/TCNC_Shirt026/TCNC_Shirt026_obj.usd",
+      "coord_count": 1772
+    },
+    {
+      "asset_index": 92,
+      "asset_id": 92,
+      "asset_path": "Dress/Short_Gallus/DSG_Dress102/DSG_Dress102_obj.usd",
+      "coord_count": 2128
+    },
+    {
+      "asset_index": 129,
+      "asset_id": 129,
+      "asset_path": "Tops/Collar_noSleeve_FrontClose/TCNC_Vest002/TCNC_Vest002_obj.usd",
+      "coord_count": 2270
+    },
+    {
+      "asset_index": 133,
+      "asset_id": 133,
+      "asset_path": "Tops/NoCollar_Ssleeve_FrontClose/TNSC_top515/TNSC_top515_obj.usd",
+      "coord_count": 2028
+    },
+    {
+      "asset_index": 135,
+      "asset_id": 135,
+      "asset_path": "Tops/NoCollar_noSleeve_FrontClose/TNNC_Top146/TNNC_Top146_obj.usd",
+      "coord_count": 2191
+    },
+    {
+      "asset_index": 138,
+      "asset_id": 138,
+      "asset_path": "Tops/Gallus/TG_Top125/TG_Top125_obj.usd",
+      "coord_count": 1579
+    },
+    {
+      "asset_index": 154,
+      "asset_id": 154,
+      "asset_path": "Tops/Tube_Tops/TTT_Top174/TTT_Top174_obj.usd",
+      "coord_count": 1912
+    },
+    {
+      "asset_index": 155,
+      "asset_id": 155,
+      "asset_path": "Tops/NoCollar_noSleeve_FrontClose/TNNC_Top642/TNNC_Top642_obj.usd",
+      "coord_count": 2310
+    },
+    {
+      "asset_index": 179,
+      "asset_id": 179,
+      "asset_path": "Tops/NoCollar_noSleeve_FrontClose/TNNC_Top343/TNNC_Top343_obj.usd",
+      "coord_count": 2427
+    },
+    {
+      "asset_index": 198,
+      "asset_id": 198,
+      "asset_path": "Dress/Short_Tube/DST_Dress440/DST_Dress440_obj.usd",
+      "coord_count": 2849
+    },
+    {
+      "asset_index": 209,
+      "asset_id": 209,
+      "asset_path": "Tops/Collar_noSleeve_FrontClose/TCNC_Top055_1/TCNC_Top055_1_obj.usd",
+      "coord_count": 1684
+    },
+    {
+      "asset_index": 244,
+      "asset_id": 244,
+      "asset_path": "Trousers/Long/PL_Pants049/PL_Pants049_obj.usd",
+      "coord_count": 3423
+    },
+    {
+      "asset_index": 261,
+      "asset_id": 261,
+      "asset_path": "Tops/Tube_Tops/TTT_Top445/TTT_Top445_obj.usd",
+      "coord_count": 2564
+    },
+    {
+      "asset_index": 273,
+      "asset_id": 273,
+      "asset_path": "Dress/Short_Gallus/DSG_Dress373/DSG_Dress373_obj.usd",
+      "coord_count": 2989
+    },
+    {
+      "asset_index": 278,
+      "asset_id": 278,
+      "asset_path": "Tops/Collar_Ssleeve_FrontClose/TCSC_Top579/TCSC_Top579_obj.usd",
+      "coord_count": 2974
+    },
+    {
+      "asset_index": 304,
+      "asset_id": 304,
+      "asset_path": "Dress/Long_Gallus/DLG_Dress100/DLG_Dress100_obj.usd",
+      "coord_count": 3140
+    },
+    {
+      "asset_index": 330,
+      "asset_id": 330,
+      "asset_path": "Tops/NoCollar_Ssleeve_FrontClose/TNSC_Top628/TNSC_Top628_obj.usd",
+      "coord_count": 3229
+    },
+    {
+      "asset_index": 339,
+      "asset_id": 339,
+      "asset_path": "Dress/Short_LongSleeve/DSLS_Dress155/DSLS_Dress155_obj.usd",
+      "coord_count": 3899
+    },
+    {
+      "asset_index": 360,
+      "asset_id": 360,
+      "asset_path": "Trousers/Short/PS_Pants130/PS_Pants130_obj.usd",
+      "coord_count": 3416
+    },
+    {
+      "asset_index": 368,
+      "asset_id": 368,
+      "asset_path": "Trousers/Short/PS_Short044/PS_Short044_obj.usd",
+      "coord_count": 3445
+    },
+    {
+      "asset_index": 400,
+      "asset_id": 400,
+      "asset_path": "Tops/Collar_Lsleeve_FrontClose/TCLC_Top476/TCLC_Top476_obj.usd",
+      "coord_count": 3590
+    },
+    {
+      "asset_index": 401,
+      "asset_id": 401,
+      "asset_path": "Tops/Collar_noSleeve_FrontClose/TCNC_Top087/TCNC_Top087_obj.usd",
+      "coord_count": 2197
+    },
+    {
+      "asset_index": 432,
+      "asset_id": 432,
+      "asset_path": "Tops/Collar_Lsleeve_FrontClose/TCLC_Jacket162/TCLC_Jacket162_obj.usd",
+      "coord_count": 3622
+    },
+    {
+      "asset_index": 452,
+      "asset_id": 452,
+      "asset_path": "Tops/Gallus/TG_Top165/TG_Top165_obj.usd",
+      "coord_count": 2134
+    },
+    {
+      "asset_index": 461,
+      "asset_id": 461,
+      "asset_path": "Tops/NoCollar_noSleeve_FrontClose/TNNC_092/TNNC_092_obj.usd",
+      "coord_count": 3620
+    },
+    {
+      "asset_index": 462,
+      "asset_id": 462,
+      "asset_path": "Trousers/Short/PS_067/PS_067_obj.usd",
+      "coord_count": 3895
+    },
+    {
+      "asset_index": 465,
+      "asset_id": 465,
+      "asset_path": "Tops/NoCollar_noSleeve_FrontClose/TNNC_088/TNNC_088_obj.usd",
+      "coord_count": 3976
+    },
+    {
+      "asset_index": 491,
+      "asset_id": 491,
+      "asset_path": "Tops/NoCollar_noSleeve_FrontClose/TNNC_top362/TNNC_top362_obj.usd",
+      "coord_count": 3569
+    },
+    {
+      "asset_index": 505,
+      "asset_id": 505,
+      "asset_path": "Dress/Short_NoSleeve/DSNS_Dress255/DSNS_Dress255_obj.usd",
+      "coord_count": 3910
+    },
+    {
+      "asset_index": 506,
+      "asset_id": 506,
+      "asset_path": "Tops/NoCollar_Lsleeve_FrontClose/TNLC_Normal_Model_032/TNLC_Normal_Model_032_obj.usd",
+      "coord_count": 4677
+    },
+    {
+      "asset_index": 541,
+      "asset_id": 541,
+      "asset_path": "Tops/Collar_Ssleeve_FrontClose/TCSC_Top410/TCSC_Top410_obj.usd",
+      "coord_count": 4019
+    },
+    {
+      "asset_index": 545,
+      "asset_id": 545,
+      "asset_path": "Trousers/Long/PL_LongPants012/PL_LongPants012_obj.usd",
+      "coord_count": 3119
+    },
+    {
+      "asset_index": 548,
+      "asset_id": 548,
+      "asset_path": "Tops/NoCollar_Lsleeve_FrontClose/TNLC_Top587/TNLC_Top587_obj.usd",
+      "coord_count": 4038
+    },
+    {
+      "asset_index": 562,
+      "asset_id": 562,
+      "asset_path": "Tops/Gallus/TG_Top296/TG_Top296_obj.usd",
+      "coord_count": 3650
+    },
+    {
+      "asset_index": 571,
+      "asset_id": 571,
+      "asset_path": "Trousers/Short/PS_037/PS_037_obj.usd",
+      "coord_count": 4288
+    },
+    {
+      "asset_index": 593,
+      "asset_id": 593,
+      "asset_path": "Trousers/Long/PL_M2_015/PL_M2_015_obj.usd",
+      "coord_count": 4998
+    },
+    {
+      "asset_index": 603,
+      "asset_id": 603,
+      "asset_path": "Tops/Collar_noSleeve_FrontOpen/TCNO_Jacket120/TCNO_Jacket120_obj.usd",
+      "coord_count": 4136
+    },
+    {
+      "asset_index": 614,
+      "asset_id": 614,
+      "asset_path": "Tops/NoCollar_noSleeve_FrontClose/TNNC_Top188/TNNC_Top188_obj.usd",
+      "coord_count": 2762
+    },
+    {
+      "asset_index": 619,
+      "asset_id": 619,
+      "asset_path": "Trousers/Long/PL_Pants79/PL_Pants79_obj.usd",
+      "coord_count": 4678
+    },
+    {
+      "asset_index": 624,
+      "asset_id": 624,
+      "asset_path": "Tops/NoCollar_noSleeve_FrontClose/TNNC_model2_005/TNNC_model2_005_obj.usd",
+      "coord_count": 4335
+    },
+    {
+      "asset_index": 629,
+      "asset_id": 629,
+      "asset_path": "Tops/NoCollar_noSleeve_FrontOpen/TNNO_model2_006/TNNO_model2_006_obj.usd",
+      "coord_count": 4349
+    },
+    {
+      "asset_index": 634,
+      "asset_id": 634,
+      "asset_path": "Trousers/Short/PS_M2_012/PS_M2_012_obj.usd",
+      "coord_count": 4314
+    },
+    {
+      "asset_index": 650,
+      "asset_id": 650,
+      "asset_path": "Trousers/Long/PL_007/PL_007_obj.usd",
+      "coord_count": 5229
+    },
+    {
+      "asset_index": 660,
+      "asset_id": 660,
+      "asset_path": "Trousers/Long/PL_095/PL_095_obj.usd",
+      "coord_count": 5000
+    },
+    {
+      "asset_index": 678,
+      "asset_id": 678,
+      "asset_path": "Tops/NoCollar_Ssleeve_FrontClose/TNSC_Top542/TNSC_Top542_obj.usd",
+      "coord_count": 1518
+    },
+    {
+      "asset_index": 697,
+      "asset_id": 697,
+      "asset_path": "Dress/Long_NoSleeve/DLNS_Dress226/DLNS_Dress226_obj.usd",
+      "coord_count": 4822
+    },
+    {
+      "asset_index": 727,
+      "asset_id": 727,
+      "asset_path": "Tops/Hooded_noSleeve_FrontClose/THNC_097/THNC_097_obj.usd",
+      "coord_count": 4660
+    },
+    {
+      "asset_index": 733,
+      "asset_id": 733,
+      "asset_path": "Trousers/Short/PS_024/PS_024_obj.usd",
+      "coord_count": 4802
+    },
+    {
+      "asset_index": 737,
+      "asset_id": 737,
+      "asset_path": "Tops/NoCollar_noSleeve_FrontOpen/TNNO_Normal_Model_060/TNNO_Normal_Model_060_obj.usd",
+      "coord_count": 4388
+    },
+    {
+      "asset_index": 807,
+      "asset_id": 807,
+      "asset_path": "Tops/NoCollar_Lsleeve_FrontClose/TNLC_model2_075/TNLC_model2_075_obj.usd",
+      "coord_count": 5288
+    },
+    {
+      "asset_index": 831,
+      "asset_id": 831,
+      "asset_path": "Dress/Short_NoSleeve/DSNS_Dress437/DSNS_Dress437_obj.usd",
+      "coord_count": 5171
+    },
+    {
+      "asset_index": 860,
+      "asset_id": 860,
+      "asset_path": "Dress/Long_NoSleeve/DLNS_Dress045_0/DLNS_Dress045_0_obj.usd",
+      "coord_count": 4360
+    },
+    {
+      "asset_index": 877,
+      "asset_id": 877,
+      "asset_path": "Dress/Long_Gallus/DLG_Dress098/DLG_Dress098_obj.usd",
+      "coord_count": 3648
+    },
+    {
+      "asset_index": 880,
+      "asset_id": 880,
+      "asset_path": "Tops/Hooded_Lsleeve_FrontClose/THLC_Jacket077/THLC_Jacket077_obj.usd",
+      "coord_count": 5186
+    },
+    {
+      "asset_index": 937,
+      "asset_id": 937,
+      "asset_path": "Tops/NoCollar_Ssleeve_FrontClose/TNSC_Normal_Model_040/TNSC_Normal_Model_040_obj.usd",
+      "coord_count": 5536
+    },
+    {
+      "asset_index": 980,
+      "asset_id": 980,
+      "asset_path": "Tops/NoCollar_Lsleeve_FrontClose/TNLC_Top250/TNLC_Top250_obj.usd",
+      "coord_count": 5573
+    },
+    {
+      "asset_index": 982,
+      "asset_id": 982,
+      "asset_path": "Dress/Long_NoSleeve/TNNC_Top421/TNNC_Top421_obj.usd",
+      "coord_count": 5905
+    },
+    {
+      "asset_index": 998,
+      "asset_id": 998,
+      "asset_path": "Tops/NoCollar_Lsleeve_FrontClose/TNLC_Jacket090/TNLC_Jacket090_obj.usd",
+      "coord_count": 5756
+    },
+    {
+      "asset_index": 1005,
+      "asset_id": 1005,
+      "asset_path": "Tops/NoCollar_Lsleeve_FrontClose/TNLC_Top425/TNLC_Top425_obj.usd",
+      "coord_count": 5790
+    },
+    {
+      "asset_index": 1011,
+      "asset_id": 1011,
+      "asset_path": "Tops/NoCollar_Ssleeve_FrontClose/TNSC_Top488/TNSC_Top488_obj.usd",
+      "coord_count": 5429
+    },
+    {
+      "asset_index": 1031,
+      "asset_id": 1031,
+      "asset_path": "Trousers/Long/PL_M1_064/PL_M1_064_obj.usd",
+      "coord_count": 6022
+    },
+    {
+      "asset_index": 1070,
+      "asset_id": 1070,
+      "asset_path": "Trousers/Long/PL_M2_011/PL_M2_011_obj.usd",
+      "coord_count": 6161
+    },
+    {
+      "asset_index": 1083,
+      "asset_id": 1083,
+      "asset_path": "Trousers/Long/PL_Pants078/PL_Pants078_obj.usd",
+      "coord_count": 6259
+    },
+    {
+      "asset_index": 1087,
+      "asset_id": 1087,
+      "asset_path": "Tops/NoCollar_Lsleeve_FrontOpen/TNLO_004_/TNLO_004__obj.usd",
+      "coord_count": 6269
+    },
+    {
+      "asset_index": 1098,
+      "asset_id": 1098,
+      "asset_path": "Trousers/Long/PL_M1_100/PL_M1_100_obj.usd",
+      "coord_count": 6114
+    },
+    {
+      "asset_index": 1100,
+      "asset_id": 1100,
+      "asset_path": "Trousers/Long/PL_LongPants011/PL_LongPants011_obj.usd",
+      "coord_count": 4824
+    },
+    {
+      "asset_index": 1110,
+      "asset_id": 1110,
+      "asset_path": "Dress/Long_LongSleeve/DLLS_Dress058/DLLS_Dress058_obj.usd",
+      "coord_count": 6486
+    },
+    {
+      "asset_index": 1128,
+      "asset_id": 1128,
+      "asset_path": "Dress/Long_LongSleeve/DLLS_Dress008_1/DLLS_Dress008_1_obj.usd",
+      "coord_count": 6558
+    },
+    {
+      "asset_index": 1130,
+      "asset_id": 1130,
+      "asset_path": "Trousers/Long/PL_Pants065/PL_Pants065_obj.usd",
+      "coord_count": 6470
+    },
+    {
+      "asset_index": 1160,
+      "asset_id": 1160,
+      "asset_path": "Trousers/Long/PL_M2_040/PL_M2_040_obj.usd",
+      "coord_count": 6491
+    },
+    {
+      "asset_index": 1200,
+      "asset_id": 1200,
+      "asset_path": "Trousers/Long/PL_092/PL_092_obj.usd",
+      "coord_count": 7059
+    },
+    {
+      "asset_index": 1208,
+      "asset_id": 1208,
+      "asset_path": "Tops/NoCollar_Lsleeve_FrontClose/TNLC_084/TNLC_084_obj.usd",
+      "coord_count": 7079
+    },
+    {
+      "asset_index": 1216,
+      "asset_id": 1216,
+      "asset_path": "Tops/NoCollar_Lsleeve_FrontClose/TNLC_model2_018/TNLC_model2_018_obj.usd",
+      "coord_count": 6803
+    },
+    {
+      "asset_index": 1233,
+      "asset_id": 1233,
+      "asset_path": "Dress/Long_Tube/DLT_Dress035_1/DLT_Dress035_1_obj.usd",
+      "coord_count": 4610
+    },
+    {
+      "asset_index": 1240,
+      "asset_id": 1240,
+      "asset_path": "Tops/NoCollar_Lsleeve_FrontClose/TNLC_Normal_Model_036/TNLC_Normal_Model_036_obj.usd",
+      "coord_count": 6921
+    },
+    {
+      "asset_index": 1244,
+      "asset_id": 1244,
+      "asset_path": "Dress/Long_NoSleeve/DLNS_dress236/DLNS_dress236_obj.usd",
+      "coord_count": 5979
+    },
+    {
+      "asset_index": 1249,
+      "asset_id": 1249,
+      "asset_path": "Dress/Short_Gallus/DSNS_Dress193/DSNS_Dress193_obj.usd",
+      "coord_count": 7108
+    },
+    {
+      "asset_index": 1322,
+      "asset_id": 1322,
+      "asset_path": "Trousers/Long/PL_020/PL_020_obj.usd",
+      "coord_count": 7580
+    },
+    {
+      "asset_index": 1327,
+      "asset_id": 1327,
+      "asset_path": "Trousers/Long/PL_M1_069/PL_M1_069_obj.usd",
+      "coord_count": 7608
+    },
+    {
+      "asset_index": 1334,
+      "asset_id": 1334,
+      "asset_path": "Tops/Hooded_Lsleeve_FrontClose/THLC_Jacket018/THLC_Jacket018_obj.usd",
+      "coord_count": 7552
+    },
+    {
+      "asset_index": 1361,
+      "asset_id": 1361,
+      "asset_path": "Dress/Long_Gallus/DLG_Dress312/DLG_Dress312_obj.usd",
+      "coord_count": 7888
+    },
+    {
+      "asset_index": 1381,
+      "asset_id": 1381,
+      "asset_path": "Trousers/Long/PL_longpants020/PL_longpants020_obj.usd",
+      "coord_count": 6282
+    },
+    {
+      "asset_index": 1392,
+      "asset_id": 1392,
+      "asset_path": "Trousers/Long/PL_M1_092/PL_M1_092_obj.usd",
+      "coord_count": 7935
+    },
+    {
+      "asset_index": 1448,
+      "asset_id": 1448,
+      "asset_path": "Tops/NoCollar_Lsleeve_FrontClose/TNLC_Top319/TNLC_Top319_obj.usd",
+      "coord_count": 3719
+    },
+    {
+      "asset_index": 1457,
+      "asset_id": 1457,
+      "asset_path": "Tops/Collar_Lsleeve_FrontClose/TCLC_model2_044/TCLC_model2_044_obj.usd",
+      "coord_count": 7654
+    },
+    {
+      "asset_index": 1463,
+      "asset_id": 1463,
+      "asset_path": "Tops/NoCollar_Lsleeve_FrontClose/TNLC_Dress425/TNLC_Dress425_obj.usd",
+      "coord_count": 8524
+    },
+    {
+      "asset_index": 1482,
+      "asset_id": 1482,
+      "asset_path": "Dress/Long_Gallus/DLG_Dress165/DLG_Dress165_obj.usd",
+      "coord_count": 8915
+    },
+    {
+      "asset_index": 1496,
+      "asset_id": 1496,
+      "asset_path": "Dress/Long_Gallus/SS_Skirt115/SS_Skirt115_obj.usd",
+      "coord_count": 5333
+    },
+    {
+      "asset_index": 1506,
+      "asset_id": 1506,
+      "asset_path": "Dress/Short_Tube/DST_Dress388/DST_Dress388_obj.usd",
+      "coord_count": 5242
+    },
+    {
+      "asset_index": 1516,
+      "asset_id": 1516,
+      "asset_path": "Dress/Long_Tube/DLT_Dress007/DLT_Dress007_obj.usd",
+      "coord_count": 9248
+    },
+    {
+      "asset_index": 1520,
+      "asset_id": 1520,
+      "asset_path": "Dress/Long_Tube/DLT_Dress175/DLT_Dress175_obj.usd",
+      "coord_count": 9653
+    },
+    {
+      "asset_index": 1548,
+      "asset_id": 1548,
+      "asset_path": "Tops/NoCollar_Lsleeve_FrontClose/TNLC_Dress424/TNLC_Dress424_obj.usd",
+      "coord_count": 10254
+    },
+    {
+      "asset_index": 1552,
+      "asset_id": 1552,
+      "asset_path": "Dress/Long_Gallus/DLG_Dress376/DLG_Dress376_obj.usd",
+      "coord_count": 10638
+    },
+    {
+      "asset_index": 1560,
+      "asset_id": 1560,
+      "asset_path": "Dress/Long_NoSleeve/DLNS_Dress422/DLNS_Dress422_obj.usd",
+      "coord_count": 10918
+    },
+    {
+      "asset_index": 1570,
+      "asset_id": 1570,
+      "asset_path": "Dress/Short_NoSleeve/DSNS_Dress051_0/DSNS_Dress051_0_obj.usd",
+      "coord_count": 9875
+    },
+    {
+      "asset_index": 1597,
+      "asset_id": 1597,
+      "asset_path": "Dress/Long_NoSleeve/DLNS_Dress028_0/DLNS_Dress028_0_obj.usd",
+      "coord_count": 10978
+    },
+    {
+      "asset_index": 1617,
+      "asset_id": 1617,
+      "asset_path": "Dress/Short_NoSleeve/DSNS_Dress048_1/DSNS_Dress048_1_obj.usd",
+      "coord_count": 5337
+    },
+    {
+      "asset_index": 1625,
+      "asset_id": 1625,
+      "asset_path": "Dress/Long_LongSleeve/DLLS_Dress352/DLLS_Dress352_obj.usd",
+      "coord_count": 13168
+    }
+  ]
+}

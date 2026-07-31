@@ -1,0 +1,22 @@
+{
+  "seed": 0,
+  "description": "trusted paper case asset93_shared_best",
+  "assets": [
+    {
+      "local_asset_index": 93,
+      "asset_index": 1548,
+      "asset_id": 1548,
+      "asset_path": "Tops/NoCollar_Lsleeve_FrontClose/TNLC_Dress424/TNLC_Dress424_obj.usd",
+      "pairs": [
+        {
+          "coord_id1": 241,
+          "coord_id2": 9735,
+          "raw_id1": 246,
+          "raw_id2": 11967,
+          "distance": 0.5793238878250122,
+          "bin_idx": 3
+        }
+      ]
+    }
+  ]
+}

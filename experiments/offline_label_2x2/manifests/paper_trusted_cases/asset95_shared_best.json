@@ -1,0 +1,22 @@
+{
+  "seed": 0,
+  "description": "trusted paper case asset95_shared_best",
+  "assets": [
+    {
+      "local_asset_index": 95,
+      "asset_index": 1560,
+      "asset_id": 1560,
+      "asset_path": "Dress/Long_NoSleeve/DLNS_Dress422/DLNS_Dress422_obj.usd",
+      "pairs": [
+        {
+          "coord_id1": 9327,
+          "coord_id2": 3410,
+          "raw_id1": 11195,
+          "raw_id2": 4044,
+          "distance": 0.23343916237354279,
+          "bin_idx": 0
+        }
+      ]
+    }
+  ]
+}

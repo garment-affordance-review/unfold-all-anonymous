@@ -1,0 +1,76 @@
+data:
+  supervision_index: ${DATA_ROOT}/pair_policy_train_v2/index.json
+  index_cache: experiments/pair_policy/runs/train/pair_policy_exp_huber/index.json
+  resize_width: 320
+  resize_height: 240
+  val_ratio: 0.125
+  split_seed: 42
+  rebuild_index: false
+  index_progress_every: 1000
+  filter:
+    min_a1_std: 0.0
+    min_a1_top1_margin: 0.0
+    min_reward_row_top1_margin: 0.0
+
+mask_augment:
+  enabled: false
+
+model:
+  in_channels: 3
+  feature_dim: 64
+  backbone:
+    name: monai_unet
+    params:
+      out_channels: 64
+      channels: [32, 64, 128, 256]
+      strides: [2, 2, 2]
+      num_res_units: 2
+      norm: BATCH
+      dropout: 0.0
+
+target:
+  name: image_exp
+
+loss:
+  name: masked_huber
+  lambda_a1: 1.0
+  lambda_a2: 1.0
+  huber_delta: 0.1
+
+wandb:
+  enabled: true
+  project: pair-policy
+  entity: null
+  name: pair-policy-monai-unet-exp-huber
+  tags:
+    - pair_policy
+    - monai_unet
+    - ddp
+    - exp
+    - huber
+  mode: online
+
+train:
+  output_dir: experiments/pair_policy/runs/train/pair_policy_exp_huber
+  seed: 42
+  device: cuda
+  distributed:
+    backend: nccl
+    nproc_per_node: 2
+  epochs: 50
+  shuffle: true
+  val_shuffle: false
+  batch_size: 8
+  val_batch_size: 8
+  num_workers: 8
+  pin_memory: true
+  persistent_workers: true
+  prefetch_factor: 2
+  lr: 0.001
+  weight_decay: 0.0001
+  num_x1_samples: 4
+  a1_target_tau: 0.05
+  a2_target_tau: 0.05
+  max_steps_per_epoch: 0
+  log_every_steps: 50
+  vis_every: 1

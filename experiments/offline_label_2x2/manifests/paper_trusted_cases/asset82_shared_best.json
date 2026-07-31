@@ -1,0 +1,22 @@
+{
+  "seed": 0,
+  "description": "trusted paper case asset82_shared_best",
+  "assets": [
+    {
+      "local_asset_index": 82,
+      "asset_index": 1361,
+      "asset_id": 1361,
+      "asset_path": "Dress/Long_Gallus/DLG_Dress312/DLG_Dress312_obj.usd",
+      "pairs": [
+        {
+          "coord_id1": 30,
+          "coord_id2": 41,
+          "raw_id1": 43,
+          "raw_id2": 54,
+          "distance": 0.12152766436338425,
+          "bin_idx": 0
+        }
+      ]
+    }
+  ]
+}

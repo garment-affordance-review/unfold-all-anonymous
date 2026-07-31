@@ -1,0 +1,173 @@
+# UnfoldAll environment configuration file
+
+# ========== Basic environment settings ==========
+seed: 42 # Default: 42
+decimation: 1  # Default: 1
+num_stabilization_steps_on_reset: 50  # Default: 5
+vertex_control_enabled: true  # Default: true
+kinematic_mass_multiplier: 0.0  # Default: 1.0
+
+randomize_on_reset: true
+steps_per_episode: 4
+episodes_per_asset_batch: 8
+# steps_per_episode: 1
+# episodes_per_asset_batch: 1
+
+# ========== Asset settings ==========
+assets_root: "./data/assets"
+garment_categories: ["Dress", "Tops", "Trousers"]
+enable_textures: false
+spawn_cfg:
+  init_euler_deg: [0.0, 0.0, 180.0]
+  center: [0.0, 0.0, 1.5]  # Default: [0.0, 0.0, 1.5]
+  range: [0.0, 0.0, 0.2]  # Default: [0.1, 0.1, 0.2]
+  rot_range_deg: [180.0, 180.0, 360.0]  # Default: [180.0, 180.0, 360.0]
+  predrop_relift:
+    enabled: false
+    rerandomize_orientation: true
+    height_range: [0.8, 1.2]
+    xy_jitter: [0.05, 0.05]
+
+# ========== Random policy configuration ==========
+random_policy:
+  min_grasp_dist: 0.2
+  num_angles: 16
+  num_scales: 5
+
+# ========== Pair-Conditioned Offline Collection ==========
+pair_conditioned_collection:
+  output_root: "data/clothes_with_map"
+  # coord is voxel-downsampled from the USD-derived template pose used by reset_to_poses.
+  # Changing this voxel size changes both the training input density and the reward sampling set.
+  coord_voxel_size: 0.01
+  anchor_fps_count: 128
+  pairs_per_asset: 512
+  pair_distance_bins: 4
+  pair_target_height: 1.5
+  resume: true
+  save_debug_vis: false
+
+# ========== Distributed Collection ==========
+distributed_collection:
+  enabled: false
+  gpu_ids: [0]
+  num_envs_per_gpu: 32
+  entrypoint: "offline_pair_conditioned"  # offline_standard | offline_pair_conditioned
+
+# ========== Simulation settings ==========
+sim:
+  dt: 0.016666666666666666  # 60Hz
+  # dt: 0.008333333333333333  # 120Hz
+  # dt: 0.004166666666666667 # 240Hz
+  render_interval: 1 
+  # render_interval: 2 
+  # render_interval: 4
+
+# ========== Action sequence configuration ==========
+action_sequence:
+  loading_mode: y_gravity
+  pair_pose_velocity: 0.4
+  # ========== Lifting phase: lift vertices ==========
+  lifting:
+    ground_clearance: 0.03
+  fling:
+    stretch_pose_velocity: 0.16
+    height_adjust_velocity: 0.6
+    height_adjust_max_step: 0.05
+    height_adjust_target_clearance: 0.12
+    height_adjust_bulk_target_clearance: 0.08
+    height_adjust_bulk_quantile: 0.10
+    height_adjust_tolerance: 0.01
+    height_adjust_max_rounds: 200
+    height_adjust_settle_steps: 4
+    pre_stretch_settle_steps: 6
+    forward_y: 0.40
+    backward_y: 0.00
+    backward_height: 0.06
+    swing_velocity: 1.5
+    backward_hold_steps: 4
+  y_gravity:
+    stretch_pose_velocity: 0.4
+    pre_stretch_hold_steps: 30
+    conditioned_pre_stretch_hold_steps: 90
+    post_stretch_hold_steps: 30
+  # ========== Holding phase: keep vertices lifted ==========
+  holding:
+    gravity_switch:
+      duration_steps: 60  # Default: 20
+    
+    # Subphase 2: lower vertex height near the ground.
+    lower_vertices:
+      ground_height_offset: 0.02  # Default: 0.05
+    
+    # Subphase 3: hold for a fixed number of steps after restoring gravity.
+    gravity_restore:
+      duration_steps: 20  # Default: 20
+  
+  # ========== Stabilizing phase: wait for the cloth to settle ==========
+  # Unified stabilization wait config used after reset and after the action sequence.
+  stabilizing:
+    # Maximum wait steps. Exits early if the cloth stabilizes.
+    max_duration_steps: 100  # Default: 150
+    # Maximum vertex velocity threshold for considering cloth stable (m/s).
+    velocity_threshold: 0.1  # Default: 0.01
+
+# ========== Motion velocity configuration ==========
+normal_motion_velocity: 1.0  # Default: 0.5
+stretch_motion_velocity: 0.5  # Default: 0.5 (stretch velocity, m/s)
+
+# ========== Reward configuration ==========
+deformable_weight: 0.65
+
+# ========== Stretch phase configuration (adaptive stretch) ==========
+# Maximum stretch distance in meters on the XY plane.
+stretch_max_distance: 2.0
+stretch_strain_threshold: 2.0
+# Strain check interval during stretching. Check every N steps to reduce overhead.
+check_interval: 3  # Default: 3
+
+# ========== Scene / cloning settings ==========
+scene:
+  num_envs: 32  # Default: 8
+  env_spacing: 2.0 # Default: 2.5
+  replicate_physics: false  # Default: false (deformable particle cloth does not support physics replication)
+  clone_in_fabric: true  # Default: false
+
+# ========== Cloth physics parameters ==========
+garment_physics:
+  solver_position_iteration_count: 16
+  
+  friction: 0.8
+  particle_friction_scale: 1.0
+  adhesion: 0.1
+  particle_adhesion_scale: 2.0
+
+  particle_mass: 0.0001
+  gravity_scale: 1.0
+  
+  stretch_stiffness: 1500.0
+  bend_stiffness: 0.05
+  shear_stiffness: 1.0
+
+  spring_damping: 0.1
+  damping: 0.5  # Increased damping to dissipate impact energy
+
+  contact_offset: 0.015
+  rest_offset: 0.012
+  particle_contact_offset: 0.015
+  fluid_rest_offset: 0.012
+  solid_rest_offset: 0.012
+  max_depenetration_velocity: 1.0  # Reduced from 5.0 to prevent explosive repulsion
+  max_velocity: 3.0  # Reduced from 10.0 to cap max energy
+  scale: [0.0085, 0.0085, 0.0085]
+
+# ========== Ground physics parameters ==========
+ground_physics:
+  static_friction: 1.0  # Static friction coefficient
+  dynamic_friction: 1.0 # Dynamic friction coefficient
+  restitution: 0.0      # Restitution coefficient (0.0 means no bounce)
+
+debug:
+  rigid_fixed_y: false
+  protocol_trace: false
+  stretch_trace: false

@@ -1,0 +1,38 @@
+{
+  "seed": 0,
+  "description": "Two representative qualitative cases for supervision-protocol comparison in the paper.",
+  "assets": [
+    {
+      "local_asset_index": 92,
+      "asset_index": 1520,
+      "asset_id": 1520,
+      "asset_path": "Dress/Long_Tube/DLT_Dress175/DLT_Dress175_obj.usd",
+      "pairs": [
+        {
+          "coord_id1": 118,
+          "coord_id2": 88,
+          "raw_id1": 120,
+          "raw_id2": 89,
+          "distance": 0.06061073765158653,
+          "bin_idx": 0
+        }
+      ]
+    },
+    {
+      "local_asset_index": 96,
+      "asset_index": 1570,
+      "asset_id": 1570,
+      "asset_path": "Dress/Short_NoSleeve/DSNS_Dress051_0/DSNS_Dress051_0_obj.usd",
+      "pairs": [
+        {
+          "coord_id1": 49,
+          "coord_id2": 2591,
+          "raw_id1": 49,
+          "raw_id2": 2646,
+          "distance": 0.08146563172340393,
+          "bin_idx": 0
+        }
+      ]
+    }
+  ]
+}

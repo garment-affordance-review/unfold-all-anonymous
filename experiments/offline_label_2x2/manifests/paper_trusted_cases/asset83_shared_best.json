@@ -1,0 +1,22 @@
+{
+  "seed": 0,
+  "description": "trusted paper case asset83_shared_best",
+  "assets": [
+    {
+      "local_asset_index": 83,
+      "asset_index": 1381,
+      "asset_id": 1381,
+      "asset_path": "Trousers/Long/PL_longpants020/PL_longpants020_obj.usd",
+      "pairs": [
+        {
+          "coord_id1": 2643,
+          "coord_id2": 5875,
+          "raw_id1": 3661,
+          "raw_id2": 9479,
+          "distance": 0.24204590916633606,
+          "bin_idx": 1
+        }
+      ]
+    }
+  ]
+}

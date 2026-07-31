@@ -1,0 +1,254 @@
+seed: 39
+torch_deterministic: true
+decimation: 1
+num_stabilization_steps_on_reset: 50
+vertex_control_enabled: true
+kinematic_mass_multiplier: 0.0
+randomize_on_reset: true
+steps_per_episode: 1
+episodes_per_asset_batch: 1
+assets_root: ./data/assets
+garment_categories:
+- Dress
+- Tops
+- Trousers
+enable_textures: true
+cloth_root: /World/Cloth
+patch_size_m: 0.2
+spawn_cfg:
+  orientation_mode: uniform_quat
+  init_euler_deg:
+  - 0.0
+  - 0.0
+  - 180.0
+  center:
+  - 0.0
+  - 0.0
+  - 1.5
+  range:
+  - 0.0
+  - 0.0
+  - 0.2
+  rot_range_deg:
+  - 180.0
+  - 180.0
+  - 360.0
+  predrop_relift:
+    enabled: true
+    rerandomize_orientation: true
+    height_range:
+    - 0.8
+    - 1.2
+    xy_jitter:
+    - 0.0
+    - 0.0
+random_policy:
+  min_grasp_dist: 0.2
+  num_angles: 16
+  num_scales: 5
+sim:
+  dt: 0.016666666666666666
+  render_interval: 1
+action_sequence:
+  pair_pose_velocity: 0.4
+  lifting:
+    ground_clearance: 0.03
+  fling:
+    stretch_pose_velocity: 0.16
+    height_adjust_velocity: 0.6
+    height_adjust_max_step: 0.05
+    height_adjust_target_clearance: 0.12
+    height_adjust_bulk_target_clearance: 0.08
+    height_adjust_bulk_quantile: 0.10
+    height_adjust_tolerance: 0.01
+    height_adjust_max_rounds: 200
+    height_adjust_settle_steps: 4
+    pre_stretch_settle_steps: 6
+    forward_y: 0.40
+    backward_y: 0.00
+    backward_height: 0.06
+    swing_velocity: 1.5
+    backward_hold_steps: 4
+  y_gravity:
+    stretch_pose_velocity: 0.4
+    pre_stretch_hold_steps: 30
+    conditioned_pre_stretch_hold_steps: 90
+    post_stretch_hold_steps: 30
+  holding:
+    gravity_switch:
+      duration_steps: 60
+    lower_vertices:
+      ground_height_offset: 0.02
+    gravity_restore:
+      duration_steps: 20
+  stabilizing:
+    max_duration_steps: 100
+    velocity_threshold: 0.1
+normal_motion_velocity: 1.0
+stretch_motion_velocity: 0.5
+deformable_weight: 0.65
+stretch_max_distance: 2.0
+stretch_strain_threshold: 2.0
+check_interval: 3
+scene:
+  num_envs: 1
+  env_spacing: 2.0
+  replicate_physics: false
+  clone_in_fabric: false
+garment_physics:
+  solver_position_iteration_count: 16
+  friction: 0.8
+  particle_friction_scale: 1.0
+  adhesion: 0.1
+  particle_adhesion_scale: 2.0
+  particle_mass: 0.0001
+  gravity_scale: 1.0
+  stretch_stiffness: 1500.0
+  bend_stiffness: 0.05
+  shear_stiffness: 1.0
+  spring_damping: 0.1
+  damping: 0.5
+  contact_offset: 0.02
+  rest_offset: 0.015
+  particle_contact_offset: 0.015
+  fluid_rest_offset: 0.012
+  solid_rest_offset: 0.012
+  max_depenetration_velocity: 1.0
+  max_velocity: 3.0
+  scale:
+  - 0.0085
+  - 0.0085
+  - 0.0085
+ground_physics:
+  static_friction: 1.0
+  dynamic_friction: 1.0
+  restitution: 0.0
+debug:
+  rigid_fixed_y: false
+  protocol_trace: false
+  stretch_trace: false
+obs_types:
+- pairs
+- pos
+- rgb
+- depth
+- mask
+mv_enabled: true
+mv_num_views: 3
+mv_radius: 1.35
+mv_elevation_deg: 30.0
+capture_rounds_per_step: 1
+samples_per_asset: 18
+camera_res:
+- 640
+- 480
+renderer: PathTracing
+render_mode: quality
+aa: DLAA
+dlss_mode: 3
+spp: 4
+denoise: true
+pt_spp_per_frame: 64
+pt_total_spp: 1024
+pt_max_bounces: 8
+pt_denoise: true
+replicator:
+  randomization_periods:
+    lights: 1
+    dome_background: 1
+    camera_intrinsics: 1
+    cloth_material: 1
+  light:
+    hdris:
+    - ${DATASET_ROOT}/isaac-assets/materials/DomeLights/Environments_NVD/Assets/Skies/Indoor/adams_place_bridge_4k.hdr
+    - ${DATASET_ROOT}/isaac-assets/materials/DomeLights/Environments_NVD/Assets/Skies/Storm/approaching_storm_4k.hdr
+    - ${DATASET_ROOT}/isaac-assets/materials/DomeLights/Environments_NVD/Assets/Skies/Cloudy/champagne_castle_1_4k.hdr
+    - ${DATASET_ROOT}/isaac-assets/materials/DomeLights/Environments_NVD/Assets/Skies/Night/moonlit_golf_4k.hdr
+    - ${DATASET_ROOT}/isaac-assets/materials/DomeLights/Environments_NVD/Assets/Skies/Studio/photo_studio_01_4k.hdr
+    - ${DATASET_ROOT}/isaac-assets/materials/DomeLights/Environments_NVD/Assets/Skies/Clear/qwantani_4k.hdr
+    - ${DATASET_ROOT}/isaac-assets/materials/DomeLights/Environments_NVD/Assets/Skies/Night/moonlit_golf_4k.hdr
+    - ${DATASET_ROOT}/isaac-assets/materials/DomeLights/Environments_NVD/Assets/Skies/Clear/qwantani_4k.hdr
+    dome_intensity_range:
+    - 50
+    - 700
+    dome_exposure_range:
+    - -2.0
+    - -0.1
+    extra_light_intensity_range:
+    - 50
+    - 1200
+    color_temp_range:
+    - 4600.0
+    - 7200.0
+    position_jitter: 2.0
+    height_range:
+    - 2.5
+    - 6.0
+    radius_range:
+    - 0.8
+    - 2.5
+    num_extra_lights: 1
+  camera:
+    orbit_mode: uniform_ring
+    intrinsics_mode: per_view
+    uniform_ring_elevation_mode: stratified
+    focal_length_range:
+    - 14.0
+    - 17.0
+    radius_jitter: 0.15
+    elevation_jitter_deg: 6.0
+    yaw_jitter_deg: 2.0
+    look_at_jitter: 0.05
+    min_elevation_deg: 20.0
+    max_elevation_deg: 70.0
+    roll_max_deg: 3.0
+    min_height: 0.6
+  camera_adapt:
+    mode: fov_backsolve
+    target_metric: long_side
+    target_mask_ratio_range:
+    - 1.0
+    - 1.5
+    target_long_side_ratio_range:
+    - 0.7
+    - 0.9
+    dist_jitter: 0.12
+    distance_scale: 1.0
+    d_clamp:
+    - 0.5
+    - 2.0
+    max_resample: 6
+    enable_cache: true
+  fabric_texture:
+    keep_original_views: 1
+    random_prob_after_original: 1.0
+  material:
+    albedo_jitter:
+    - 0.85
+    - 1.15
+    roughness_jitter:
+    - 0.8
+    - 1.2
+    metalness_range:
+    - 0.0
+    - 0.05
+  rt_subframes: 4
+texture_scale_jitter:
+- 0.85
+- 1.15
+texture_rotate_choices:
+- 0
+- 90
+- 180
+- 270
+texture_translate_range:
+- 0.0
+- 1.0
+ground_size_m:
+- 4.0
+- 4.0
+ground_patch_size_m: 0.5
+material_fix:
+  roughness_min: 0.6
+  metalness_value: 0.0
+  albedo_scale: 1.0

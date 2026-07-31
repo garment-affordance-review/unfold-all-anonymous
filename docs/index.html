@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="Visual Affordance Priors for Generalizable Garment Flattening">
+  <meta name="description" content="Anonymous project page for visual affordance priors for generalizable garment flattening through structural-to-visual value learning.">
+  <meta name="keywords" content="cloth manipulation, robotic manipulation, affordance learning, grasp pair, deformable object manipulation">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Anonymous Project Page">
+  <meta property="og:title" content="Visual Affordance Priors for Generalizable Garment Flattening">
+  <meta property="og:description" content="Learning visual affordance priors for garment flattening by transferring structural pair values from high-throughput physics simulation into image-space supervision.">
+  <meta property="og:image" content="static/images/overview.png">
+  <meta property="og:image:alt" content="Overview of the structural supervision and visual distillation pipeline.">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Visual Affordance Priors for Generalizable Garment Flattening">
+  <meta name="twitter:description" content="Anonymous project page for visual affordance priors for generalizable garment flattening.">
+  <meta name="twitter:image" content="static/images/overview.png">
+
+  <title>Visual Affordance Priors for Generalizable Garment Flattening</title>
+
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/custom.css?v=real-robot-play-v3">
+
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js?v=pair-value-teacher"></script>
+  <script defer src="static/js/three.min.js?v=0.160.0"></script>
+  <script defer src="static/js/pair-value-teacher.js?v=panel2-portrait-v3"></script>
+  <script defer src="static/js/visual-pair-policy.js?v=method-assets-8-v1"></script>
+  <script defer src="static/js/artf-visualization.js?v=artf-scene-ui-fix"></script>
+  <script defer src="static/js/real-inference.js?v=anonymous-media-v2"></script>
+  <script defer src="static/js/real-robot.js?v=real-robot-play-v3"></script>
+  <script defer src="static/js/overview-video.js?v=overview-video-v2"></script>
+</head>
+<body>
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">Visual Affordance Priors for Generalizable Garment Flattening</h1>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">Anonymous Submission</span>
+              </div>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">Supplementary Project Page</span>
+              </div>
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <span class="link-block">
+                    <a href="static/pdfs/paper.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+                  <span class="link-block">
+                    <a href="#artf-visualization" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><i class="fas fa-chart-bar"></i></span>
+                      <span>Results</span>
+                    </a>
+                  </span>
+                  <span class="link-block">
+                    <a href="#method" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><i class="fas fa-project-diagram"></i></span>
+                      <span>Method</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero teaser">
+      <div class="container teaser-container">
+        <div class="hero-body">
+          <img class="teaser-image" src="static/images/overview.png" alt="Fig. 1 overview of the structural supervision and visual distillation pipeline.">
+          <h2 class="subtitle has-text-centered">
+            Fig. 1. Structural-to-visual affordance learning pipeline for generalizable garment flattening.
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero">
+      <div class="container abstract-container">
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Garment flattening supports downstream garment manipulation tasks such as folding and ironing. Existing value-based methods are limited by low-throughput physics, fixed-view low-fidelity rendering, and narrow asset coverage, making learned grasp values difficult to transfer to real garments with richer topology and visual variation. To address this, we develop a structural-to-visual value-learning framework spanning data generation, structural value modeling, and visual affordance distillation. First, we build an Isaac-based data pipeline that combines high-throughput physics simulation with randomized high-fidelity rendering over diverse garment assets. Second, we perform large-scale physics evaluation of dual-grasp pairs under standardized dual-arm unfolding conditions, and construct a Pair-Value Teacher to learn the structural pair-value distribution on 3D garment point clouds. Third, we project this structural value distribution onto randomized high-fidelity rendered observations and normalize it into dense image-space supervision for a directly deployable Visual Affordance Prior. Without fine-tuning on real data, our Visual Affordance Prior improves zero-shot transfer on aRTF-Clothes over ClothMate, increasing deformable/rigid Semantic Template AUC from 0.380/0.350 to 0.869/0.843. The same comparison on 22 real-robot garment assets shows higher final unfolding quality, with mean IoU increasing from 64.9 to 77.6 and coverage from 71.6 to 86.2.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="overview-video">
+      <div class="container real-inference-container">
+        <h2 class="title is-3 has-text-centered">Overview Video</h2>
+        <p class="content has-text-centered result-intro">A short walkthrough of the problem, our pipeline, and real-world results.</p>
+        <figure class="real-robot-card">
+          <div class="real-robot-stage" id="overviewVideoStage">
+            <video id="overviewVideo" controls playsinline preload="metadata" poster="static/videos/overview/overview_poster.jpg?v=overview-video-v2" aria-label="Project overview video">
+              <source src="static/videos/overview/overview_video.mp4?v=overview-video-v2" type="video/mp4">
+            </video>
+            <button class="real-play-overlay" id="overviewVideoPlay" type="button" aria-label="Play overview video">
+              <span class="real-play-icon" aria-hidden="true"></span>
+              <span class="real-play-text">Play video</span>
+            </button>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="method">
+      <div class="container method-overview-container">
+        <h2 class="title is-3 has-text-centered">Method Overview</h2>
+        <p class="content has-text-centered result-intro">
+          Physics-only interaction labels are lifted into a point-cloud teacher, projected through synthetic rendering, and distilled into an image-space pair policy.
+        </p>
+        <div class="method-visual-grid">
+          <div class="method-visual-row">
+          <figure class="method-visual-card" style="--ar: 1.7778;">
+            <div class="method-visual-header">
+              <p class="method-index">01</p>
+              <h3 class="title is-5">Offline Action Collection</h3>
+            </div>
+            <div class="data-collection-stage">
+              <video autoplay loop muted playsinline preload="metadata" aria-label="Offline parallel simulation collection with many garment environments.">
+                <source src="static/images/data_collection/offline_collection.mp4?v=offline-full-30hz-crop09-mp4" type="video/mp4">
+              </video>
+            </div>
+            <figcaption>
+              <span>Parallel physics environments collect pair-conditioned garment interaction outcomes.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="method-visual-card" style="--ar: 0.6667;">
+            <div class="method-visual-header">
+              <p class="method-index">02</p>
+              <h3 class="title is-5">Interactive Pair-Value Teacher</h3>
+            </div>
+            <div class="pair-teacher-panel">
+              <div class="pair-teacher-stage">
+                <canvas id="pairTeacherCanvas" aria-label="Interactive point cloud reward visualization"></canvas>
+                <button id="pairAnchorPrev" class="media-carousel-arrow media-carousel-arrow-left" type="button" aria-label="Previous garment asset">
+                  <span class="icon"><i class="fas fa-chevron-left"></i></span>
+                </button>
+                <button id="pairAnchorNext" class="media-carousel-arrow media-carousel-arrow-right" type="button" aria-label="Next garment asset">
+                  <span class="icon"><i class="fas fa-chevron-right"></i></span>
+                </button>
+                <div class="pair-teacher-hud">
+                  <div class="pair-reward-legend" aria-hidden="true">
+                    <span>Low</span>
+                    <div class="pair-legend-bar"></div>
+                    <span>High</span>
+                  </div>
+                  <div class="pair-teacher-stats">
+                    <span id="pairTeacherRewardRange">Reward -0.42 to -0.06</span>
+                    <span>Drag rotate · Wheel zoom · Click point set x1</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pair-teacher-caption" id="pairTeacherCaption">
+                Top candidate x2 points are connected to the selected x1 anchor.
+              </div>
+            </div>
+          </figure>
+          </div>
+          <div class="method-visual-row">
+          <figure class="method-visual-card" style="--ar: 1.7778;">
+            <div class="method-visual-header">
+              <p class="method-index">03</p>
+              <h3 class="title is-5">Synthetic Visual Data</h3>
+            </div>
+            <div class="data-collection-stage">
+              <img src="static/images/data_collection/synthetic_collection.gif?v=data-collection-mosaic36" alt="Rendered synthetic garment sample mosaic for visual supervision.">
+            </div>
+            <figcaption>
+              <span>Rendered RGB mosaics sample 36 assets and viewpoints per frame for image-space supervision.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="method-visual-card" style="--ar: 0.6667;">
+            <div class="method-visual-header">
+              <p class="method-index">04</p>
+              <h3 class="title is-5">Visual Pair Policy Dynamics</h3>
+            </div>
+            <div class="visual-policy-stage media-carousel-stage">
+              <button id="visualPolicyPrev" class="media-carousel-arrow media-carousel-arrow-left" type="button" aria-label="Previous synthetic asset">
+                <span class="icon"><i class="fas fa-chevron-left"></i></span>
+              </button>
+              <video id="visualPolicyVideo" autoplay loop muted playsinline controls preload="metadata" aria-label="Visual pair policy A1 and A2 heatmap dynamics.">
+                <source src="static/videos/visual_pair_policy/a1_a2_asset_1.mp4?v=method-assets-8-v1" type="video/mp4">
+              </video>
+              <button id="visualPolicyNext" class="media-carousel-arrow media-carousel-arrow-right" type="button" aria-label="Next synthetic asset">
+                <span class="icon"><i class="fas fa-chevron-right"></i></span>
+              </button>
+            </div>
+            <figcaption id="visualPolicyCaption">
+              Asset 1 / 8. Top: A1 overlay on a synthetic rendered garment. Bottom: A2 overlay conditioned on the current x1.
+            </figcaption>
+          </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="artf-visualization">
+      <div class="container artf-container">
+        <h2 class="title is-3 has-text-centered">aRTF-Clothes Dataset Visualization</h2>
+        <p class="content has-text-centered result-intro">
+          Zero-shot predictions on aRTF-Clothes real images. Use the controls to switch garment categories, scene locations, and samples.
+        </p>
+        <div class="artf-panel">
+          <div class="artf-controls" aria-label="aRTF visualization controls">
+            <div class="scene-tabs artf-category-tabs" role="tablist" aria-label="Garment category">
+              <button class="scene-tab artf-category-tab is-active" type="button" data-category="towels">Towels</button>
+              <button class="scene-tab artf-category-tab" type="button" data-category="tshirts">T-shirts</button>
+              <button class="scene-tab artf-category-tab" type="button" data-category="shorts">Shorts</button>
+            </div>
+            <div class="artf-scene-control">
+              <div class="instance-slider-control">
+                <div class="instance-slider-header">
+                  <span>Scene</span>
+                  <output id="artfSceneValue" for="artfSceneSlider">Scene 1 / 8</output>
+                </div>
+                <input id="artfSceneSlider" type="range" min="1" max="8" value="1" step="1" aria-label="aRTF scene from 1 to 8">
+              </div>
+            </div>
+          </div>
+          <figure class="artf-card">
+            <div class="media-carousel-stage">
+              <button id="artfSamplePrev" class="media-carousel-arrow media-carousel-arrow-left" type="button" aria-label="Previous aRTF sample">
+                <span class="icon"><i class="fas fa-chevron-left"></i></span>
+              </button>
+              <div class="artf-comparison-grid">
+                <div class="artf-method-panel">
+                  <div class="artf-image-stage">
+                    <img id="artfOursPreview" src="static/images/artf_visualization/ours/towels/location_2/sample_01.jpg?v=artf-hires-v1" alt="Ours prediction visualization for selected aRTF category, scene, and sample.">
+                  </div>
+                </div>
+                <div class="artf-method-panel">
+                  <div class="artf-image-stage">
+                    <img id="artfClothMatePreview" src="static/images/artf_visualization/clothmate/towels/location_2/sample_01.jpg?v=artf-hires-v1" alt="ClothMate prediction visualization for selected aRTF category, scene, and sample.">
+                  </div>
+                </div>
+              </div>
+              <button id="artfSampleNext" class="media-carousel-arrow media-carousel-arrow-right" type="button" aria-label="Next aRTF sample">
+                <span class="icon"><i class="fas fa-chevron-right"></i></span>
+              </button>
+            </div>
+            <figcaption id="artfCaption">Towels - Scene 1 - Sample 01 / 08</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="real-world-inference">
+      <div class="container real-inference-container">
+        <h2 class="title is-3 has-text-centered">Real-World Inference</h2>
+        <p class="content has-text-centered result-intro">
+          Real-camera inference visualizations with unified predicted grasp-pair overlays. Use the controls to switch between environments and instances.
+        </p>
+        <div class="real-inference-panel">
+          <div class="real-inference-controls" aria-label="Real-world inference controls">
+            <div class="scene-tabs" role="tablist" aria-label="Environment">
+              <button class="scene-tab is-active" type="button" data-scene="scene_1">Scene 1</button>
+              <button class="scene-tab" type="button" data-scene="scene_2">Scene 2</button>
+              <button class="scene-tab" type="button" data-scene="scene_3">Scene 3</button>
+              <button class="scene-tab" type="button" data-scene="scene_4">Scene 4</button>
+            </div>
+          </div>
+          <figure class="real-video-card">
+            <div class="real-video-stage media-carousel-stage">
+              <img id="realInferencePreview" src="static/images/real_inference_frames/scene_1/case_001.jpg?v=unified-grasp-v1" alt="Preview frame for selected real-world inference instance.">
+              <button id="realInferencePlay" class="real-play-overlay" type="button" aria-label="Play selected real-world inference video">
+                <span class="real-play-icon" aria-hidden="true"></span>
+                <span class="real-play-text">Play video</span>
+              </button>
+              <video id="realInferenceVideo" controls muted preload="metadata" playsinline>
+                <source src="static/videos/real_inference/scene_1/case_001.mp4?v=unified-grasp-v1" type="video/mp4">
+              </video>
+              <button id="realInstancePrev" class="media-carousel-arrow media-carousel-arrow-left" type="button" aria-label="Previous real-world inference instance">
+                <span class="icon"><i class="fas fa-chevron-left"></i></span>
+              </button>
+              <button id="realInstanceNext" class="media-carousel-arrow media-carousel-arrow-right" type="button" aria-label="Next real-world inference instance">
+                <span class="icon"><i class="fas fa-chevron-right"></i></span>
+              </button>
+            </div>
+            <figcaption id="realInferenceCaption">Scene 1 - Instance 01 / 26</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="real-robot-deployment">
+      <div class="container real-inference-container">
+        <h2 class="title is-3 has-text-centered">Real-Robot Deployment</h2>
+        <p class="content has-text-centered result-intro">
+          Deployed on a physical robot, the learned policy unfolds and flattens a variety of garments from crumpled initial states.
+        </p>
+        <figure class="real-robot-card">
+          <div class="real-robot-stage" id="realRobotStage">
+            <video id="realRobotVideo" controls muted loop playsinline preload="metadata" poster="static/videos/real_robot/robot_unfolding_poster.jpg?v=real-robot-play-v3" aria-label="Real robot deploying the policy to flatten various garments.">
+              <source src="static/videos/real_robot/robot_unfolding.mp4?v=real-robot-deploy-v1" type="video/mp4">
+            </video>
+            <button class="real-play-overlay" id="realRobotPlay" type="button" aria-label="Play deployment video">
+              <span class="real-play-icon" aria-hidden="true"></span>
+              <span class="real-play-text">Play video</span>
+            </button>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <div class="bibtex-header">
+          <h2 class="title">BibTeX</h2>
+          <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+            <i class="fas fa-copy"></i>
+            <span class="copy-text">Copy</span>
+          </button>
+        </div>
+        <pre id="bibtex-code"><code>@article{anonymous2026affordancepriors,
+  title={Visual Affordance Priors for Generalizable Garment Flattening},
+  author={Anonymous Authors},
+  journal={Anonymous Submission},
+  year={2026}
+}</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content has-text-centered">
+            <p>
+              Project page template credits are omitted during anonymous review.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

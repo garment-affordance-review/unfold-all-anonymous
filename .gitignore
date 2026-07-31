@@ -1,0 +1,33 @@
+data
+models
+checkpoints
+__pycache__/
+log.txt
+wandb
+logs/
+.claude
+*.png
+
+# Private paper workspace. It is backed up in its own repository under
+# paper/ral_visual_prior and should not be published from the code repo.
+paper/
+
+# Sensitive local hardware/runtime artifacts.
+DianaApiLog.txt
+experiments/pair_policy_real/calibration/
+experiments/pair_policy_real/data/
+experiments/pair_policy_real/runs/
+
+# Experiment run artifacts
+experiments/**/runs/*
+!experiments/**/runs/.gitkeep
+
+# Python cache under experiment helpers
+experiments/**/__pycache__/
+experiments/**/*.pyc
+
+# Generated media stays local unless explicitly force-added.
+*.mp4
+!docs/static/images/*.png
+!docs/static/videos/*.mp4
+!docs/static/videos/**/*.mp4

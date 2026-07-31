@@ -1,0 +1,86 @@
+{
+  "seed": 0,
+  "description": "Five representative qualitative cases for supervision-protocol comparison in the paper.",
+  "assets": [
+    {
+      "local_asset_index": 92,
+      "asset_index": 1520,
+      "asset_id": 1520,
+      "asset_path": "Dress/Long_Tube/DLT_Dress175/DLT_Dress175_obj.usd",
+      "pairs": [
+        {
+          "coord_id1": 118,
+          "coord_id2": 88,
+          "raw_id1": 120,
+          "raw_id2": 89,
+          "distance": 0.16265088319778442,
+          "bin_idx": 0
+        }
+      ]
+    },
+    {
+      "local_asset_index": 96,
+      "asset_index": 1570,
+      "asset_id": 1570,
+      "asset_path": "Dress/Short_NoSleeve/DSNS_Dress051_0/DSNS_Dress051_0_obj.usd",
+      "pairs": [
+        {
+          "coord_id1": 49,
+          "coord_id2": 2591,
+          "raw_id1": 49,
+          "raw_id2": 2646,
+          "distance": 0.11725034564733505,
+          "bin_idx": 0
+        }
+      ]
+    },
+    {
+      "local_asset_index": 83,
+      "asset_index": 1381,
+      "asset_id": 1381,
+      "asset_path": "Trousers/Long/PL_longpants020/PL_longpants020_obj.usd",
+      "pairs": [
+        {
+          "coord_id1": 2886,
+          "coord_id2": 4793,
+          "raw_id1": 4114,
+          "raw_id2": 7525,
+          "distance": 0.3244723975658417,
+          "bin_idx": 2
+        }
+      ]
+    },
+    {
+      "local_asset_index": 84,
+      "asset_index": 1392,
+      "asset_id": 1392,
+      "asset_path": "Trousers/Long/PL_M1_092/PL_M1_092_obj.usd",
+      "pairs": [
+        {
+          "coord_id1": 6422,
+          "coord_id2": 2925,
+          "raw_id1": 7752,
+          "raw_id2": 3456,
+          "distance": 0.7202548384666443,
+          "bin_idx": 3
+        }
+      ]
+    },
+    {
+      "local_asset_index": 50,
+      "asset_index": 737,
+      "asset_id": 737,
+      "asset_path": "Tops/NoCollar_noSleeve_FrontOpen/TNNO_Normal_Model_060/TNNO_Normal_Model_060_obj.usd",
+      "pairs": [
+        {
+          "coord_id1": 2713,
+          "coord_id2": 2118,
+          "raw_id1": 3329,
+          "raw_id2": 2599,
+          "distance": 0.1696338951587677,
+          "bin_idx": 0
+        }
+      ]
+    }
+  ]
+}

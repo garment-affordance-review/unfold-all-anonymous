@@ -1,0 +1,36 @@
+data_root: data/renders
+manifest: data/renders/manifest.jsonl
+output_dir: ${DATA_ROOT}/pair_policy_train_v2
+teacher_cfg: ${TEACHER_EXP_ROOT}/config.py
+teacher_ckpt: ${TEACHER_EXP_ROOT}/model/model_best.pth
+pointcept_code_root: ${TEACHER_EXP_ROOT}/code
+pointcept_data_root: ${PROJECT_ROOT}/data/clothes
+pointcept_manifest: ${PROJECT_ROOT}/data/clothes/asset_index.jsonl
+device: cuda
+raw_to_teacher_map_key: raw2coord
+pair_chunk_size: 65536
+all_samples: true
+max_samples: null
+sample_id: null
+num_candidates: 0
+teacher_min_candidate_dist: 0.0
+pair_budget: 0
+a1_reduce: topk_mean
+a1_reduce_topk: 8
+reward_symmetrize: max_swap
+topk_cond: 8
+heat_sigma: 18.0
+split:
+  val_ratio: 0.125
+  seed: 42
+train_cache:
+  enabled: true
+  out_dir: ${DATA_ROOT}/pair_policy_train_v2
+  num_x1_samples: 4
+  a1_tau: 0.1
+  a1_top_ratio: 0.2
+  target_type: masked_softmax
+  target_tau: 0.05
+  shard_size: 0
+  target_shard_size_mb: 512
+  seed: 42

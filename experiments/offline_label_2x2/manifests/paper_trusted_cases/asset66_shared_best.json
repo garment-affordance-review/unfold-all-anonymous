@@ -1,0 +1,22 @@
+{
+  "seed": 0,
+  "description": "trusted paper case asset66_shared_best",
+  "assets": [
+    {
+      "local_asset_index": 66,
+      "asset_index": 1098,
+      "asset_id": 1098,
+      "asset_path": "Trousers/Long/PL_M1_100/PL_M1_100_obj.usd",
+      "pairs": [
+        {
+          "coord_id1": 2720,
+          "coord_id2": 419,
+          "raw_id1": 3289,
+          "raw_id2": 473,
+          "distance": 0.287880539894104,
+          "bin_idx": 1
+        }
+      ]
+    }
+  ]
+}
